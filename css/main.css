@@ -1,68 +1,38 @@
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+/* Custom CSS */
 
-/* ------------ media queries --------------- */
-@media only screen and (max-width: 400px) {
-    #intro h1 { font-size: 34px; }
-    #intro h2 { font-size: 24px; }
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
 
-    #content .intro_img img{
-        width: 52%;
-        margin: 14px 0;
-    }
+  .container .intro_img img{
+      width: 26%;
+  }
+  .navbar-default {
+      background-image: linear-gradient(to right, #FFF5EB 0px, #FFF0E0 100%) !important;
+  }
+}
 
-    #content footer * {
-        font-size: 20px;
-    }
-
+html {
+  background: url("assets/photo_1.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-    width: 100%;
-    margin: auto;
-    font-family: 'Lora', serif;
+    background-color: transparent;
+    padding-top: 65px;
 }
 
-h1{
-    font-size: 28px;
-}
-
-h2{
-    margin: 14px 0;
-    font-size: 20px;
-}
-
-ul, li {
-    list-style-type: none;
-    display : inline;
-}
-
-a:link {
-    text-decoration: none;
-    color: #3399FF;
-}
-
-a:hover {
-    color: blue;
-    text-decoration:none;
-    text-shadow: 0 0 2px #999;
-}
-
-#main_wrapper {
-    text-align: center;
-    margin: 10%;
+/* navbar */
+.navbar-default {
+    background-color: transparent;
+    background-image: none;
 }
 
 .intro_img img{
     width: 15%;
     margin: 14px 0;
-}
-
-footer {
-    margin: 100px 0;
-}
-
-footer p {
-    font-size: 16px;
-    margin-bottom: 6px;
 }
