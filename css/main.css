@@ -11,10 +11,14 @@
   .navbar-default {
       background-image: linear-gradient(to right, #FFF5EB 0px, #FFF0E0 100%) !important;
   }
+  .mobile {
+      height: 100%;
+  }
+  
 }
 
 html {
-  background: url("../assets/photo_1.jpg") no-repeat fixed;
+  background: url("../assets/photo_1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
