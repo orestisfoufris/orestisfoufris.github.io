@@ -42,7 +42,7 @@
                   <li><a href="https://uk.linkedin.com/pub/orestis-foufris/45/701/a90" target="_blank" onClick="ga.push(['_trackEvent', 'External Link', 'linkedin link']);">LinkedIn</a></li>
                   <li><a href="https://www.quora.com/Orestis-Foufris" target="_blank" onClick="ga.push(['_trackEvent', 'External Link', 'quora link']);">Quora</a></li>
                   <li><a href="https://github.com/orestisfoufris" target="_blank" onClick="ga.push(['_trackEvent', 'External Link', 'github link']);">Github</a></li>
-                  <li><a href="https://twitter.com/orestis_f" target="_blank" onClick="ga.push(['_trackEvent', 'External Link', 'twitter link']);">Twitter</a></li>
+                  <li><a href="https://twitter.com/orestis_f" target="_blank" onClick="ga('send', 'event', '_trackEvent', 'External Link', 'twitter link');">Twitter</a></li>
                 </ul>
             </div>
         </div>
@@ -65,13 +65,11 @@
     <!-- <script src="js/bootstrap.min.js"></script> -->
 
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
         ga('create', 'UA-61529290-1', 'auto');
         ga('send', 'pageview');
-     </script>
+    </script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+
   </body>
 </html>
